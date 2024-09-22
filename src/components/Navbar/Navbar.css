@@ -1,0 +1,19 @@
+.navbar.nav{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #333a3f !important;
+    z-index: 1;
+}
+.logo{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.nav-link:active,.nav-link:hover{
+    color: darkorange !important;
+}
+.nav-link{
+    color: white !important ;
+}

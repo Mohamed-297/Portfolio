@@ -1,0 +1,129 @@
+#projects{
+    background-color: #333a3f;
+    color: white;
+    padding-top: 50px;
+}
+.projectText{
+    width: 80%;
+    margin: 0 auto;    
+    font-size: 120px;
+    font-weight: 900;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+}
+.project{
+    background-color: #333a3f;
+}
+
+.projectWrapper {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 100px;
+    color: white;
+    background-color: #333a3f;
+    padding-bottom: 50px;
+}
+.moreProjects{
+    padding-bottom: 50px;
+    text-align: center;
+    /* margin: 0; */
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.moreProjects a{
+    margin-left: 10px;
+    color: white;
+    position: relative;
+}
+.moreProjects a:hover{
+    bottom: 2px;
+    color: orange;
+    transition: color 0.5s ease-in-out;
+}
+.eCommerceContainer, .dashboardContainer {
+    width: 30%;
+    position: relative;
+    overflow: hidden; /* Ensure the background doesn't spill out */
+}
+
+.projectWrapper img {
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+    transition: filter 0.3s ease;   
+}
+
+.eCommerceContainer::before,.dashboardContainer::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0; /* Start with 0 height */
+    background: rgb(14, 14, 3, 0.3); /* Overlay color */
+    transition: height 0.5s ease-in-out; /* Smooth transition */
+    pointer-events: none;
+}
+
+.eCommerceContainer:hover  .bottomOfeCommerce,.dashboardContainer:hover .bottomOfDashboard{
+    opacity: 1;
+    transition:opacity 0.5s ease-in-out;
+    pointer-events: none;
+}
+.eCommerceContainer:hover::before,.dashboardContainer:hover::before {
+    height: 100%;/* On hover, background will rise to the top */
+}
+.bottomOfeCommerce,.bottomOfDashboard{
+    position: absolute;
+    background-color: gray;
+    height: 0px;
+    width: 100%;
+    padding: 20px 0 50px;
+    z-index: 0;
+    opacity: 0;
+    bottom: 0px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    
+}
+.eCommerce {
+    display: block;
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+}
+
+@media screen and (max-width:768px) {
+    .projectWrapper{
+        display: flex;
+        
+        flex-direction: column;
+    }
+    .eCommerceContainer,.dashboardContainer{
+        
+        width: 70%;
+    }
+    .projectText{
+        font-size: 70px;
+    }
+
+    .bottomOfeCommerce,.bottomOfDashboard{
+        opacity: 1;
+    }    
+}
+@media screen and (max-width:481px) {
+    .projectText{
+        font-size: 50px;
+    }
+    
+}

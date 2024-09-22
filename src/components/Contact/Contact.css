@@ -1,0 +1,63 @@
+.contact{
+    background-color: #333a3f;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.contactWrapper{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+.allWrapped{
+    display: flex;
+    flex-direction: column;
+
+}
+.motivation{
+    font-size: 20px;
+    font-weight: 100;
+}
+.socialMedia{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.socialMedia a{
+    margin-bottom: 13px;
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+.socialMedia a:hover{
+    color: orange;
+    position: relative;
+    bottom: 3px;
+    transition: ease-in-out 0.3s;
+}
+.socialMediaIcon{
+    font-size: 30px !important;
+}
+.how-to-contact{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 25px;
+    font-weight: 100;   
+}
+.copyRights{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 80px;
+    color: orange;
+}
+/* media */
+@media screen and (max-width:768px) {
+    .contactWrapper{
+        flex-direction: column;
+    }
+    .socialMedia{
+        flex-direction: row;
+        justify-content: center;
+    }
+}

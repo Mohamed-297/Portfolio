@@ -1,0 +1,48 @@
+.about{
+    background-color: #333a3f;
+    color: white;
+    padding-top: 50px;
+}
+.aboutData{
+    width: 80%;
+    margin: 0 auto;
+}
+.career{
+    margin-top: 30px;
+    display: block;
+}
+.answer{    
+    width: 90%;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    /* margin-bottom: 100px; */
+}
+.profession{
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+}
+.title{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 70px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.myExperience{
+    flex: 1;
+    font-size: 20px;
+    font-weight: 300;
+}
+@media screen and (max-width:768px) {
+    .profession{
+        flex-direction: column;
+        align-items: flex-start;
+        /* justify-content: flex-start; */
+
+    }
+    .title{
+        font-size: 50px;
+    }
+}

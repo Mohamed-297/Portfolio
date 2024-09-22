@@ -1,0 +1,70 @@
+.wrap{
+    background-color: #333a3f ;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper{
+    padding: 50px 0;
+    background-color: #333a3f;
+    color: white;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-direction: column;
+}
+.wrap-welcome-name{
+    flex: 1 1;
+    display: flex;
+    align-items: center;
+}
+.welcome{
+    font-size: 15px;
+    font-weight: 400;
+    flex: 1;    
+}
+.designedName{
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.firstName,.lastName{
+    font-size: 70px;
+    color: transparent;
+    -webkit-text-stroke: 1px white; 
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+}
+.media a{
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+.media a:hover{
+    color: orange;
+    position: relative;
+    bottom: 3px;
+    transition: ease-in-out 0.3s;
+}
+.mediaIcon{
+    font-size: 30px !important;
+}
+
+
+/* media screen */
+@media screen and (max-width:768px) {
+    .firstName,.lastName{
+        font-size: 50px;
+        
+    }
+    .wrapper{
+        flex-direction: column;
+        text-align: center;
+    }
+    .wrap-welcome-name{
+        flex-direction: column;
+
+    }
+    
+}
+
