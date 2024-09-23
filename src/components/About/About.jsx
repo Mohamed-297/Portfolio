@@ -28,6 +28,30 @@ export default function About() {
                         My goal is to contribute to impactful projects while learning from experienced professionals along the way.
                     </p>
                 </div>
+                <div className="myEducation">
+                    <h1 className="title">My Education</h1>
+                    <div className="detailsOfGrad">
+                        <h3 className="university">Helwan University, Faculty of Engineering, Computer Department.</h3>
+                        <h4 className="grade">Bachelor of Engineering in Computer Science</h4>
+                        <h5 className="yearOfGrad">Graduated: 2024</h5>
+                    </div>
+                </div>
+                <div className="mySkills">
+
+                    <h1 className="title">My Skills</h1>
+                    <ul className="TheSkills">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Bootstrap</li>
+                        <li>React</li>
+                        <li>Git-Github</li>
+                        <li>React Context API</li>
+                        <li>npm</li>
+                        <li>Algorithms and Data Structures (Ongoing study)</li>
+
+                    </ul>
+                </div>
             </div>
         </div>
     )
