@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import "./Navbar.css"
 import logo from "../../images/logo.jpg"
 export default function Navbar() {
