@@ -17,6 +17,7 @@ export default function Contact() {
                     <ul className="how-to-contact">
                         <li>Email: mohamedelsherif671@gmail.com</li>
                         <li>Phone: 01144612043</li>
+                        <li>WhatsApp: 01098763904</li>
                         <li>GitHub-Username: Mohamed-297</li>
                     </ul>
                 </div>
