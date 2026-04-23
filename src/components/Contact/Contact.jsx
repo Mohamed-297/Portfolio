@@ -16,8 +16,8 @@ export default function Contact() {
                     </p>
                     <ul className="how-to-contact">
                         <li>Email: mohamedelsherif671@gmail.com</li>
-                        <li>Phone: 01098763904</li>
-                        <li>LinkedIn-Username: Mohamed-297</li>
+                        <li>Phone: 01144612043</li>
+                        <li>GitHub-Username: Mohamed-297</li>
                     </ul>
                 </div>
                 <div className="socialMedia">
