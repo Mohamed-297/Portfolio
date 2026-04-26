@@ -1,6 +1,7 @@
 import "./projects.css"
 import eCommerce from "../../images/Screenshot_21-9-2024_171815_e-commerce-eight-puce.vercel.app.jpeg"
 import dashboard from "../../images/Screenshot_21-9-2024_21511_basic-dashboard-55sf.vercel.app.jpeg"
+import movies from "../../images/Capture.jpg"
 import GitHubIcon from '@mui/icons-material/GitHub';
 
 export default function Projects() {
@@ -15,6 +16,10 @@ export default function Projects() {
                 <div  className="dashboardContainer">
                     <a target="blank" href="https://basic-dashboard-55sf.vercel.app/"><img className="dashboard" src={dashboard} alt="Sneakers" /></a>
                     <div className="bottomOfDashboard">Dashboard</div>
+                </div>
+                <div  className="moviesSiteContainer">
+                    <a target="blank" href="https://movies-three-gamma-72.vercel.app/"><img className="moviesSite" src={movies} alt="movies" /></a>
+                    <div className="bottomOfMoviesSite">Movies Site</div>
                 </div>
             </div>
                 <h3 className="moreProjects">More projects on my Github <a target="blank" href="https://github.com/Mohamed-297"><GitHubIcon className="socialMediaIcon" /></a>

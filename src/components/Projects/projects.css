@@ -48,7 +48,7 @@
     color: orange;
     transition: color 0.5s ease-in-out;
 }
-.eCommerceContainer, .dashboardContainer {
+.eCommerceContainer, .dashboardContainer ,.moviesSiteContainer{
     width: 30%;
     position: relative;
     overflow: hidden; /* Ensure the background doesn't spill out */
@@ -61,7 +61,7 @@
     transition: filter 0.3s ease;   
 }
 
-.eCommerceContainer::before,.dashboardContainer::before {
+.eCommerceContainer::before,.dashboardContainer::before,.moviesSiteContainer::before {
     content: '';
     position: absolute;
     left: 0;
@@ -73,15 +73,17 @@
     pointer-events: none;
 }
 
-.eCommerceContainer:hover  .bottomOfeCommerce,.dashboardContainer:hover .bottomOfDashboard{
+.eCommerceContainer:hover  .bottomOfeCommerce,
+.dashboardContainer:hover .bottomOfDashboard
+,.moviesSiteContainer:hover .bottomOfMoviesSite{
     opacity: 1;
     transition:opacity 0.5s ease-in-out;
     pointer-events: none;
 }
-.eCommerceContainer:hover::before,.dashboardContainer:hover::before {
+.eCommerceContainer:hover::before,.dashboardContainer:hover::before,.moviesSiteContainer:hover::before {
     height: 100%;/* On hover, background will rise to the top */
 }
-.bottomOfeCommerce,.bottomOfDashboard{
+.bottomOfeCommerce,.bottomOfDashboard,.bottomOfMoviesSite{
     position: absolute;
     background-color: gray;
     height: 0px;
@@ -94,7 +96,6 @@
     color: white;
     font-weight: 700;
     font-size: 20px;
-    
 }
 .eCommerce {
     display: block;
@@ -109,7 +110,7 @@
         
         flex-direction: column;
     }
-    .eCommerceContainer,.dashboardContainer{
+    .eCommerceContainer,.dashboardContainer,.moviesSiteContainer{
         
         width: 70%;
     }
@@ -117,7 +118,7 @@
         font-size: 70px;
     }
 
-    .bottomOfeCommerce,.bottomOfDashboard{
+    .bottomOfeCommerce,.bottomOfDashboard,.bottomOfMoviesSite{
         opacity: 1;
     }    
 }
